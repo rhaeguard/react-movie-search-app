@@ -71,7 +71,7 @@ export default class App extends React.Component{
       });
     };
 
-    change = el => 'http://www.omdbapi.com/?apikey=c435fe88&i='+el;
+    change = el => 'www.omdbapi.com/?apikey=c435fe88&i='+el;
 
     findMov = arr => {
       const promises = arr.map(el=>fetch(this.change(el)).then(e=>{
