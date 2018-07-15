@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://mensurowary.github.io/react-movie-search-app",
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.11.3"
+  },
   "dependencies": {
     "jquery": "^3.3.1",
     "react": "^16.4.1",
