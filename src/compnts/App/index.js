@@ -59,7 +59,7 @@ export default class App extends React.Component{
     }
 
     loadData = (keySearch, page) => {
-      fetch(`http://www.omdbapi.com/?apikey=c435fe88&s=${keySearch}&page=${page}`)
+      fetch(`https://www.omdbapi.com/?apikey=c435fe88&s=${keySearch}&page=${page}`)
       .then(response => response.json())
       .then(json=>{
         let movies = json.Search;
@@ -71,7 +71,7 @@ export default class App extends React.Component{
       });
     };
 
-    change = el => 'www.omdbapi.com/?apikey=c435fe88&i='+el;
+    change = el => 'https://www.omdbapi.com/?apikey=c435fe88&i='+el;
 
     findMov = arr => {
       const promises = arr.map(el=>fetch(this.change(el)).then(e=>{
